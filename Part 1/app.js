@@ -27,23 +27,9 @@ cameraTrigger.onclick = function() {
     cameraSensor.height = cameraView.videoHeight;
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
     cameraOutput.src = cameraSensor.toDataURL("image/webp");
-    track.stop();
+    cameraOutput.classList.add("taken");
+    // track.stop();
 };
 
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
-
-
-// Install ServiceWorker
-if ('serviceWorker' in navigator) {
-  console.log('CLIENT: service worker registration in progress.');
-  navigator.serviceWorker.register('/sw.js').then(function() {
-    console.log('CLIENT: service worker registration complete.');
-  }, function() {
-    console.log('CLIENT: service worker registration failure.');
-  });
-} else {
-  console.log('CLIENT: service worker is not supported.');
-}
-
-

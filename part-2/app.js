@@ -38,7 +38,7 @@ window.addEventListener("load", cameraStart, false);
 // Install ServiceWorker
 if ('serviceWorker' in navigator) {
   console.log('CLIENT: service worker registration in progress.');
-  navigator.serviceWorker.register('sw.js').then(function() {
+  navigator.serviceWorker.register( '/camera-app/part-2/sw.js' , { scope : ' ' } ).then(function() {
     console.log('CLIENT: service worker registration complete.');
   }, function() {
     console.log('CLIENT: service worker registration failure.');
@@ -46,5 +46,4 @@ if ('serviceWorker' in navigator) {
 } else {
   console.log('CLIENT: service worker is not supported.');
 }
-
 

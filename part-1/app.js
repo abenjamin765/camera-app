@@ -23,11 +23,13 @@ function cameraStart() {
         });
 }
 
-
 commentSubmit.onclick = function() {
     var x = document.getElementById("comment--input").value;
-    document.getElementById("bullets").innerHTML = x;
+    var element = document.createElement("button");
+    element.innerHTML = x;
+    document.getElementById("bullets").appendChild(element);
 }
+
 // Take a picture when cameraTrigger is tapped
 cameraTrigger.onclick = function() {
     cameraSensor.width = cameraView.videoWidth;

@@ -32,10 +32,11 @@ html, body{
     left: calc(50% - 100px);
 }
 
-.bullet{
+#bullets{
     display: flex;
     flex-direction: row;
-    width: 1340px;
+    flex-wrap: wrap;
+    width: 900px;
     color: white;
     font-size: 16px;
     padding: 15px 20px;
@@ -43,7 +44,7 @@ html, body{
     position: fixed;
     top: 50px;
     left: calc(100px);
-    z-index: 2;
+  
 
 }
 

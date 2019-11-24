@@ -7,6 +7,8 @@ const cameraView = document.querySelector("#camera--view"),
     cameraOutput = document.querySelector("#camera--output"),
     cameraSensor = document.querySelector("#camera--sensor"),
     cameraTrigger = document.querySelector("#camera--trigger");
+    commentSubmit = document.querySelector("#comment--button");
+
 
 // Access the device camera and stream to cameraView
 function cameraStart() {
@@ -21,6 +23,11 @@ function cameraStart() {
         });
 }
 
+
+commentSubmit.onclick = function() {
+    var x = document.getElementById("comment--input").value;
+    document.getElementById("bullets").innerHTML = x;
+}
 // Take a picture when cameraTrigger is tapped
 cameraTrigger.onclick = function() {
     cameraSensor.width = cameraView.videoWidth;

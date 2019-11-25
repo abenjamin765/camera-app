@@ -18,18 +18,18 @@ html, body{
 }
 
 #camera--trigger{
-    width: 200px;
-    background-color: black;
-    color: white;
-    font-size: 16px;
+    /* width: 200px; */
+    background-color: transparent;
+    /* color: white; */
+    /* font-size: 16px;
     border-radius: 30px;
     border: none;
     padding: 15px 20px;
     text-align: center;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+  
     position: fixed;
     bottom: 30px;
-    left: calc(50% - 100px);
+    left: calc(50% - 100px); */
 }
 
 #bullets{
@@ -49,16 +49,17 @@ html, body{
 }
 
 #comment--input{
-    width: 100px;
+    width:50%;
     background-color: white;
     color: black;
     font-size: 16px;
     padding: 15px 20px;
     text-align: center;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
-    position: fixed;
-    bottom: 50px;
-    left: calc(50% + 100px);
+    position: relative;
+    /* bottom: 50px; */
+    margin-top: 45%;
+    margin-left: 40%;
 }
 
 #comment--button{

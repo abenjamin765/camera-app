@@ -9,13 +9,14 @@
   <style>
  
   </style>
- <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
- <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
- <script src="jquery.ui.mouse.touch-punch.min.js"></script>
-  <script>
-  $( function() {
-    $( "#draggable" ).draggable();
-  } );
+  <link href="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery.ui.all.css" rel="stylesheet">
+  <link href="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery-ui-1.10.2.custom.min.css" rel="stylesheet">
+
+  <script type="text/javascript" async="" src="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/ga.js"></script>
+  <script src="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery.min.js"></script>
+  <script src="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery-ui.min.js"></script>
+  <script src="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery.ui.touch-punch.min.js">
+  
   </script>
 </head>
 <body>
@@ -23,7 +24,12 @@
 
     <img id="draggable" src="https://cdn.bulbagarden.net/upload/7/79/Squirtle_SSBU.png" alt="jenyjeny" width="100px">
 
- 
+ <script>
+ $( function() {
+    $( "#draggable" ).draggable();
+    
+  } );
+ </script>
  
 </body>
 </html>

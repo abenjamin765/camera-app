@@ -1,35 +1,74 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery UI Draggable - Default functionality</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <style>
- 
-  </style>
-  <link href="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery.ui.all.css" rel="stylesheet">
-  <link href="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery-ui-1.10.2.custom.min.css" rel="stylesheet">
+<!DOCTYPE html>
+<!-- saved from
+url=(0071)http://touchpunch.furf.com/content.php?/draggable/default-functionality
+-->
+<html lang="en" class="gr__touchpunch_furf_com">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <script type="text/javascript" async="" src="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/ga.js"></script>
-  <script src="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery.min.js"></script>
-  <script src="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery-ui.min.js"></script>
-  <script src="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery.ui.touch-punch.min.js">
-  
-  </script>
-</head>
-<body>
- 
+        <title>jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI</title>
 
-    <img id="draggable" src="https://cdn.bulbagarden.net/upload/7/79/Squirtle_SSBU.png" alt="jenyjeny" width="100px">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
- <script>
- $( function() {
-    $( "#draggable" ).draggable();
+        <!--[if lt IE 9]> <script
+        src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+
+       
+
+        <style>
+            body {
+                background: #fff;
+                font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            }
+        </style>
+
+       
+        <script
+            type="text/javascript"
+            async=""
+            src="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/ga.js"></script>
+        <script
+            src="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery.min.js"></script>
+        <script
+            src="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery-ui.min.js"></script>
+        <script
+            src="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery.ui.touch-punch.min.js"></script>
+    </head>
+    <body data-gr-c-s-loaded="true" style="cursor: auto;">
+
+        <div class="container">
+
+            <style>
+                #draggable {
+                    width: 150px;
+                    height: 150px;
+                    padding: 0.5em;
+                    background-color: transparent;
+                    border:0;
+                }
+            </style>
+           
+
+           
+                <div
+                    id="draggable"
+                    class="ui-widget-content ui-draggable"
+                    style="position: relative; left: 79px; top: -18px;">
+                    <img id="draggable" src="https://cdn.bulbagarden.net/upload/7/79/Squirtle_SSBU.png" alt="jenyjeny" width="100px">
+
+                </div>
+
     
-  } );
- </script>
- 
-</body>
+         
+        </div>
+
+        <script>
+                $(function () {
+                    $("#draggable").draggable();
+                });
+            </script>
+
+
+    </body>
 </html>
